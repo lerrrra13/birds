@@ -1,0 +1,127 @@
+$tablet-width: 640px;
+
+.footer {
+  background: var(--color-green);
+  margin-top: auto;
+  padding: 12px 24px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.footer-navigation {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-secondary);
+
+  &__menu { /*меню в футере для мобилки не отображаем*/
+    display: none;
+    flex: 0 0 20%;
+    font-size: 16px;
+
+    a {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+
+    @media (min-width: $tablet-width) {/*включаем меню*/
+      flex-direction: row;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__copyright {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin-top: auto;
+      flex: 0 0 20%;
+      a:last-child {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: initial;
+    margin-left: initial;
+  }
+}
+
+.footer-social {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  i {
+    color: var(--color-white);
+  }
+
+  &__title {
+    flex: 0 0 62%;
+    font-size: 16px;
+    font-family: var(--font-family-secondary);
+  }
+
+  &__links {
+    flex: 0 0 38%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+
+      &:hover {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 182px;
+    margin-bottom: initial;
+
+    &__title {
+      flex: auto;
+      margin-bottom: 16px;
+    }
+
+    &__links {
+      flex: auto;
+      width: 100%;
+    }
+  }
+}

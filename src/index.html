@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <title>Детские сказки</title>
+</head>
+
+<body>
+<div class="main">
+  <header class="header">
+    <div class="header-logo">
+      <a href="index.html">
+        <img alt="Перейти на главную" src="assets/images/menu/Logo.svg">
+      </a>
+    </div>
+
+    <label class="header-search">
+      <input
+        class="header-search__input"
+        placeholder="Поиск сказки"
+        type="text">
+      <img
+        alt="Поиск"
+        class="header-search__icon"
+        src="assets/images/Icon-lupa.svg">
+    </label>
+
+    <nav class="header-navigation"> <!--меню для планшетной и десктопной версий-->
+      <a class="header-navigation__item active" href="index.html">
+        <img
+          alt="Перейти на главную"
+          src="assets/images/menu/Icon-main.svg"
+        >
+      </a>
+      <a class="header-navigation__item" href="read.html">
+        <img
+          alt="Перейти в Читать"
+          src="assets/images/menu/Icon-read.svg"
+        >
+      </a>
+      <a class="header-navigation__item" href="hear.html">
+        <img
+          alt="Перейти в Слушать"
+          src="assets/images/menu/Icon-hear.svg"
+        >
+      </a>
+      <a class="header-navigation__item" href="contacts.html">
+        <img
+          alt="Перейти в контакты"
+          src="assets/images/menu/Icon-contacts.svg"
+        >
+      </a>
+    </nav>
+    <nav class="header-navigation-mobile"> <!--бургер для мобильной версии-->
+      <div class="header-navigation-mobile-menu">
+        <i class="fa fa-bars"> </i>
+        <div class="header-navigation-mobile-menu__list">
+          <a href="index.html"><img
+            alt="Перейти на главную"
+            src="assets/images/menu/Icon-main.svg">
+          </a>
+          <a href="read.html">
+            <img
+              alt="Перейти в Читать"
+              src="assets/images/menu/Icon-read.svg">
+          </a>
+          <a href="hear.html">
+            <img
+              alt="Перейти в Слушать"
+              src="assets/images/menu/Icon-hear.svg">
+          </a>
+          <a href="contacts.html">
+            <img
+              alt="Перейти в контакты"
+              src="assets/images/menu/Icon-contacts.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <img alt="облака" class="main-content__cloud" src="assets/images/main/cloud.svg">
+    <img alt="круги" class="main-content__ring" src="assets/images/main/ring.svg">
+    <img alt="книга" class="main-content__book" src="assets/images/heroes/book.png">
+    <img alt="пингвин" class="main-content__pingvin" src="assets/images/heroes/pingvin.svg">
+    <img alt="синица" class="main-content__sinica" src="assets/images/heroes/sinica.svg">
+    <img alt="снегирь" class="main-content__snegir" src="assets/images/heroes/snegir.svg">
+    <img alt="синичка" class="main-content__minisinica" src="assets/images/heroes/minisinica.svg">
+    <img alt="снегирь" class="main-content__minisnegir" src="assets/images/heroes/minisnegir.svg">
+    <img alt="трава" class="grass" src="assets/images/main/Grass.svg">
+
+    <div class="left-content"><!--для десктопной версии он слева, а для мобильной - снизу-->
+      <label class="left-content__form">
+        <input
+          class="left-content__input"
+          placeholder="Введи число"
+          type="number" min="0" max="10" step="1">
+      </label>
+      <img alt="дерево" class="left-content__tree" src="assets/images/main/tree.svg">
+    </div>
+    <div class="center-content"> <!--для мобильной версии - он верхний, для десктопа -центральный-->
+      <div class="center-content__text">
+        <h1>Добро пожаловать, дорогой гость!</h1>
+        <p>
+          Мы собрали для тебя множество интересных сказок и историй, которые
+          можно почитать или послушать. А еще у нас есть для тебя маленький
+          подарок - если ты правильно сосчитаешь количество птичек на этом
+          экране и введешь это число в секретноe окошко - получишь раскраску
+          «Пернатый отряд» в электронном варианте в подарок.
+        </p>
+        <h2>Веселых приключений!</h2>
+      </div>
+    </div>
+    <div class="right-content"><!--Для мобильной версии - он центральный, для десктопа - правый-->
+      <section> <h3>Наши новости</h3>
+        <article><h4>Ура!</h4>У нас отличные новости! Сказка "Колобок" уже на нашем сайте!
+        </article>
+        <article><h4>Тссс.</h4> Если нашли рядом со сказкой снегиря - ищите там раскраску!</article>
+        <article><h4>Внимание! </h4> Участвуйте в розыгрышах в наших соц.сетях - ссылки внизу</article>
+        <article><h4> Cool! </h4>Теперь можно слушать сказки на английском языке! Ищите отметку "En"</article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-social">
+      <div class="footer-social__title">Мы есть в соц.сетях:</div>
+      <div class="footer-social__links">
+        <a class="bg bg-violet" href="#"><i class="fa fa-linkedin"></i></a>
+        <a class="bg bg-blue" href="#"> <i class="fa fa-instagram"></i></a>
+        <a class="bg bg-green" href="#"><i class="fa fa-vk"></i></a>
+      </div>
+    </div>
+    <div class="footer-navigation">
+      <nav class="footer-navigation__menu">
+        <a href="index.html">Главная</a>
+        <a href="read.html">Читать</a>
+        <a href="hear.html">Слушать</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="footer-navigation__copyright">
+        <a href="#">© 2022 Cайт разработан Lera So</a>
+        <a href="#">Политика обработки cookie</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
