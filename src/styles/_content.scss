@@ -193,33 +193,23 @@ $tablet-width: 640px;
     margin-bottom: auto;
 
     h1 {
-      font-size: var(--font-size-default);
+      font-size: var(--font-size-maintext);
       font-family: var(--font-family-primary);
       text-align: left;
       font-weight: bold;
     }
 
     p {
-      text-indent: 1.5rem;
+      text-indent: 1.7rem;
+      font-size: 18px;
     }
 
     h2 {
       font-weight: bold;
       margin-top: 12px;
+      font-size: var(--font-size-maintext);
     }
 
-    @media (min-width: $tablet-width) {
-      //height: 380px;
-      line-height: 1.7rem;
-      //padding: 12px;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 18px;
-      //height: 430px;
-      //width: 370px;
-      line-height: 1.8rem;
-    }
   }
 }
 
